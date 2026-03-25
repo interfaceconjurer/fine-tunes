@@ -460,7 +460,8 @@ def command_generate(args: argparse.Namespace) -> None:
                 "aspect_ratio": args.aspect_ratio,
                 "output_format": "png",
                 "guidance_scale": args.guidance_scale,
-                "num_inference_steps": args.num_inference_steps
+                "num_inference_steps": args.num_inference_steps,
+                "lora_scale": args.lora_scale
             }
         )
 
@@ -606,6 +607,12 @@ def main() -> None:
         type=int,
         default=28,
         help="Number of inference steps (default: 28)"
+    )
+    generate_parser.add_argument(
+        "--lora-scale",
+        type=float,
+        default=1.0,
+        help="LoRA strength/scale (default: 1.0, try 1.5-2.5 for stronger style)"
     )
 
     args = parser.parse_args()
