@@ -180,14 +180,15 @@ def load_training_metadata(model_name: Optional[str] = None) -> Dict[str, Any]:
         return json.load(f)
 
 
-def retry_with_backoff(func: Callable, max_retries: int = 3, *args, **kwargs) -> Any:
+def retry_with_backoff(func: Callable, *args, max_retries: int = 3, **kwargs) -> Any:
     """
     Execute a function with exponential backoff on rate limit errors.
 
     Args:
         func: Function to execute
-        max_retries: Maximum number of retry attempts
-        *args, **kwargs: Arguments to pass to the function
+        *args: Positional arguments to pass to the function
+        max_retries: Maximum number of retry attempts (keyword-only)
+        **kwargs: Keyword arguments to pass to the function
 
     Returns:
         Result of the function call
@@ -252,7 +253,7 @@ def command_train(args: argparse.Namespace) -> None:
             owner=args.username,
             name=args.model_name,
             visibility="private",
-            hardware="gpu-a40-large"
+            hardware="gpu-t4"
         )
         print(f"Created new model: {destination}")
     except replicate.exceptions.ReplicateError as e:
@@ -341,8 +342,16 @@ def command_status(args: argparse.Namespace) -> None:
         print(f"Status: {training.status}")
 
         if training.created_at:
-            elapsed = datetime.now() - training.created_at.replace(tzinfo=None)
-            print(f"Elapsed time: {elapsed.total_seconds() / 60:.1f} minutes")
+            try:
+                # Remove timezone info for comparison with datetime.now()
+                if hasattr(training.created_at, 'tzinfo') and training.created_at.tzinfo is not None:
+                    created_at = training.created_at.replace(tzinfo=None)
+                else:
+                    created_at = training.created_at
+                elapsed = datetime.now() - created_at
+                print(f"Elapsed time: {elapsed.total_seconds() / 60:.1f} minutes")
+            except:
+                pass  # Skip elapsed time if there's an issue
 
         print(f"Logs URL: https://replicate.com/p/{training.id}")
         print()
@@ -422,6 +431,17 @@ def command_generate(args: argparse.Namespace) -> None:
 
     model_path = f"{args.username}/{args.model_name}"
 
+    # Get the latest version of the model
+    try:
+        model = replicate.models.get(model_path)
+        if model.latest_version:
+            model_version = f"{model_path}:{model.latest_version.id}"
+        else:
+            model_version = model_path
+    except:
+        # If we can't fetch the model, try with just the path
+        model_version = model_path
+
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Generating images")
     print(f"Model: {model_path}")
     print(f"Prompt: {prompt}")
@@ -433,7 +453,7 @@ def command_generate(args: argparse.Namespace) -> None:
     try:
         output = retry_with_backoff(
             replicate.run,
-            model_path,
+            model_version,
             input={
                 "prompt": prompt,
                 "num_outputs": args.num_outputs,
@@ -453,12 +473,13 @@ def command_generate(args: argparse.Namespace) -> None:
         saved_paths = []
 
         print("Downloading images...")
-        for i, image_url in enumerate(output):
+        for i, image_file in enumerate(output):
             filename = f"{args.model_name}_{timestamp}_{i+1}.png"
             filepath = output_dir / filename
 
-            # Download image
+            # Download image (convert FileOutput to string URL)
             import urllib.request
+            image_url = str(image_file)
             urllib.request.urlretrieve(image_url, filepath)
             saved_paths.append(filepath)
             print(f"  ✓ Saved: {filepath}")
