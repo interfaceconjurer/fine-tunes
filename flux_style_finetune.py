@@ -455,20 +455,35 @@ def command_generate(args: argparse.Namespace) -> None:
     print(f"Aspect ratio: {args.aspect_ratio}")
     print()
 
+    # Build input parameters
+    input_params = {
+        "prompt": prompt,
+        "num_outputs": args.num_outputs,
+        "aspect_ratio": args.aspect_ratio,
+        "output_format": "png",
+        "guidance_scale": args.guidance_scale,
+        "num_inference_steps": args.num_inference_steps,
+        "lora_scale": args.lora_scale
+    }
+
+    # Add image-to-image parameters if provided
+    if args.image:
+        image_path = Path(args.image)
+        if not image_path.exists():
+            print(f"ERROR: Image file not found: {image_path}")
+            sys.exit(1)
+        input_params["image"] = open(image_path, "rb")
+        input_params["prompt_strength"] = args.prompt_strength
+        print(f"Using input image: {image_path}")
+        print(f"Prompt strength: {args.prompt_strength}")
+        print()
+
     # Run inference
     try:
         output = retry_with_backoff(
             replicate.run,
             model_version,
-            input={
-                "prompt": prompt,
-                "num_outputs": args.num_outputs,
-                "aspect_ratio": args.aspect_ratio,
-                "output_format": "png",
-                "guidance_scale": args.guidance_scale,
-                "num_inference_steps": args.num_inference_steps,
-                "lora_scale": args.lora_scale
-            }
+            input=input_params
         )
 
         # Create output directory
@@ -619,6 +634,16 @@ def main() -> None:
         type=float,
         default=1.0,
         help="LoRA strength/scale (default: 1.0, try 1.5-2.5 for stronger style)"
+    )
+    generate_parser.add_argument(
+        "--image",
+        help="Input image for image-to-image mode (path to image file)"
+    )
+    generate_parser.add_argument(
+        "--prompt-strength",
+        type=float,
+        default=0.8,
+        help="Prompt strength for img2img (default: 0.8, higher = more change)"
     )
 
     args = parser.parse_args()
