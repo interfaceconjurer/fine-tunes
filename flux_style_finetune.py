@@ -105,7 +105,14 @@ def create_training_zip(image_paths: List[Path], output_path: Path) -> Path:
 
     with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for img_path in image_paths:
+            # Add image file
             zipf.write(img_path, img_path.name)
+
+            # Add caption file if it exists
+            caption_path = img_path.with_suffix('.txt')
+            if caption_path.exists():
+                zipf.write(caption_path, caption_path.name)
+                print(f"  + Including caption: {caption_path.name}")
 
     print(f"Archive created: {output_path} ({output_path.stat().st_size / 1024 / 1024:.1f} MB)")
     return output_path
@@ -280,8 +287,7 @@ def command_train(args: argparse.Namespace) -> None:
                 "optimizer": "adamw8bit",
                 "batch_size": 1,
                 "resolution": "512,768,1024",
-                "autocaption": True,
-                "autocaption_prefix": f"In the style of {args.trigger_word}, ",
+                "autocaption": False,
                 "lora_type": "style"
             },
             destination=destination
