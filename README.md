@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/hero-image.png" alt="Flux Style Tuning" width="100%">
-</p>
-
 ```
   ███████╗██╗     ██╗   ██╗██╗  ██╗    ███████╗████████╗██╗   ██╗██╗     ███████╗
   ██╔════╝██║     ██║   ██║╚██╗██╔╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝
@@ -77,30 +73,28 @@ This tool simplifies the process of creating custom Flux LoRA models for style t
 1. **Clone this repository**:
 
 ```bash
- git clone https://github.com/yourusername/flux-tuning.git
- cd flux-tuning
+# Clone and navigate to the project
+git clone https://github.com/yourusername/flux-tuning.git
+cd flux-tuning
 ```
 
-2. **Install dependencies**:
+1. **Install dependencies**:
 
 ```bash
- pip install -r requirements.txt
+# Install required Python packages
+pip install -r requirements.txt
 ```
 
-3. **Set up your Replicate API token**:
+1. **Set up your Replicate API token**:
    Get your token from [https://replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
    Or create a `.env` file:
 
-
 ## Quick Start
-
-<p align="center">
-  <img src="docs/diagrams/quick-start.svg" alt="Quick Start Guide" width="900">
-</p>
 
 **Step 1️⃣ : Train Your Model**
 
 ```bash
+# Train a model on your artwork
 python flux_style_finetune.py train \
   --images-dir ./my_artwork \
   --model-name my-art-style \
@@ -114,6 +108,7 @@ python flux_style_finetune.py train \
 **Step 2️⃣ : Check Status**
 
 ```bash
+# Monitor training progress
 python flux_style_finetune.py status
 ```
 
@@ -124,6 +119,7 @@ python flux_style_finetune.py status
 **Step 3️⃣ : Generate Images**
 
 ```bash
+# Generate images in your trained style
 python flux_style_finetune.py generate \
   --prompt "a magical forest at sunset" \
   --model-name my-art-style \
@@ -157,6 +153,7 @@ python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" -
 Train a new style model using your reference images:
 
 ```bash
+# Train with custom trigger word and step count
 python flux_style_finetune.py train \
   --images-dir ./my_artwork \
   --model-name my-art-style \
@@ -221,6 +218,7 @@ Shows:
 Once training is complete, generate images in your style:
 
 ```bash
+# Generate multiple images in widescreen format
 python flux_style_finetune.py generate \
   --prompt "a magical forest at sunset" \
   --model-name my-art-style \
@@ -249,6 +247,7 @@ python flux_style_finetune.py generate \
 Transform existing images using your trained style:
 
 ```bash
+# Transform an existing image with your style
 python flux_style_finetune.py generate \
   --prompt "transform into watercolor painting" \
   --model-name my-art-style \
@@ -280,6 +279,7 @@ python flux_style_finetune.py generate \
 Fine-tune how strongly your trained style is applied:
 
 ```bash
+# Adjust style strength with lora-scale
 python flux_style_finetune.py generate \
   --prompt "a serene landscape" \
   --model-name my-art-style \
@@ -288,10 +288,6 @@ python flux_style_finetune.py generate \
 ```
 
 **LoRA Scale Visual Guide**:
-
-<p align="center">
-  <img src="docs/diagrams/lora-scale.svg" alt="LoRA Scale Guide" width="800">
-</p>
 
 ### Combining Parameters
 
@@ -415,15 +411,7 @@ Each prompt includes:
 
 ### Training Costs
 
-<p align="center">
-  <img src="docs/diagrams/training-costs.svg" alt="Training Cost Calculator" width="900">
-</p>
-
 ### Generation Costs
-
-<p align="center">
-  <img src="docs/diagrams/generation-costs.svg" alt="Generation Costs" width="700">
-</p>
 
 ## Examples
 
@@ -438,6 +426,7 @@ Each prompt includes:
 Train a watercolor style model:
 
 ```bash
+# Train a watercolor-specific model with 1200 steps
 python flux_style_finetune.py train \
   --images-dir ./watercolor_paintings \
   --model-name watercolor-dream \
@@ -449,6 +438,7 @@ python flux_style_finetune.py train \
 Generate a landscape in that style:
 
 ```bash
+# Generate 4 landscape variations
 python flux_style_finetune.py generate \
   --prompt "a serene mountain lake with pine trees" \
   --model-name watercolor-dream \
@@ -462,6 +452,7 @@ python flux_style_finetune.py generate \
 Transform a photograph using your style:
 
 ```bash
+# Transform a photo with balanced settings
 python flux_style_finetune.py generate \
   --prompt "artistic interpretation, dramatic lighting" \
   --model-name watercolor-dream \
@@ -477,6 +468,7 @@ python flux_style_finetune.py generate \
 Generate a detailed character portrait:
 
 ```bash
+# Generate a detailed portrait with higher guidance
 python flux_style_finetune.py generate \
   --prompt "portrait of a weathered warrior, scarred face, dramatic lighting" \
   --model-name my-art-style \
@@ -498,6 +490,7 @@ python flux_style_finetune.py generate \
 Make sure you've exported the environment variable:
 
 ```bash
+# Set your Replicate API token
 export REPLICATE_API_TOKEN=r8_your_actual_token
 ```
 
