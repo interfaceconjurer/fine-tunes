@@ -50,7 +50,18 @@ python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" -
 
 Here are some examples of what I created with this tool.
 
-<!-- Add your generated images here -->
+<table>
+  <tr>
+    <td><img src="outputs/android-dream-v4_20260325_223323_1.png" width="280"></td>
+    <td><img src="outputs/android-dream-v4_20260325_233347_1.png" width="280"></td>
+    <td><img src="outputs/android-dream-v4_20260325_234416_1.png" width="280"></td>
+  </tr>
+  <tr>
+    <td><img src="outputs/android-dream-v4_20260325_235925_1.png" width="280"></td>
+    <td><img src="outputs/android-dream-v4_20260326_000455_1.png" width="280"></td>
+    <td><img src="outputs/android-dream-v4_20260326_133426_1.png" width="280"></td>
+  </tr>
+</table>
 
 For prompt inspiration, see [PROMPTS.md](PROMPTS.md) — a collection of 30+ battle-tested prompts with parameters and usage notes.
 
