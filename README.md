@@ -22,7 +22,7 @@
 [License: MIT](https://opensource.org/licenses/MIT)
 [Replicate](https://replicate.com)
 
-**Train custom AI art models on your style • Generate infinite variations • Transform any image**
+_Train custom AI art models on your style • Generate infinite variations • Transform any image_
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -31,8 +31,6 @@
 ║  generate new images in that style with simple prompts.                      ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 ```
-
----
 
 ## 📋 Table of Contents
 
@@ -54,8 +52,6 @@
 - [Troubleshooting](#troubleshooting)
 - [Project Structure](#project-structure)
 
----
-
 ## Overview
 
 This tool simplifies the process of creating custom Flux LoRA models for style transfer. It handles the entire workflow:
@@ -63,8 +59,6 @@ This tool simplifies the process of creating custom Flux LoRA models for style t
 <p align="center">
   <img src="docs/diagrams/overview-cards.svg" alt="Flux Tuning Overview" width="800">
 </p>
-
----
 
 ## Workflow
 
@@ -94,15 +88,11 @@ python flux_style_finetune.py generate --prompt "your prompt" --model-name my-st
 python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
 ```
 
----
-
 ## Prerequisites
 
 <p align="center">
   <img src="docs/diagrams/prerequisites.svg" alt="Prerequisites Checklist" width="800">
 </p>
-
----
 
 ## Installation
 
@@ -122,8 +112,6 @@ python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" -
 3. **Set up your Replicate API token**:
    Get your token from [https://replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
    Or create a `.env` file:
-
----
 
 ## Quick Start
 
@@ -168,8 +156,6 @@ python flux_style_finetune.py generate \
 ```
     🎨 Generated image saved to ./outputs/
 ```
-
----
 
 ## Usage
 
@@ -218,8 +204,6 @@ my_artwork/
 
 The tool will automatically include caption files when creating the training archive.
 
----
-
 ### Checking Training Status
 
 Check on your training progress:
@@ -238,8 +222,6 @@ Shows:
 - Elapsed time
 - Link to detailed logs
 - Instructions for generating images once complete
-
----
 
 ### Generating Images
 
@@ -269,8 +251,6 @@ python flux_style_finetune.py generate \
 
 **Trigger word**: The tool automatically prepends your trigger word (e.g., "In the style of MYART") if not already in the prompt.
 
----
-
 ### Image-to-Image Generation
 
 Transform existing images using your trained style:
@@ -299,8 +279,6 @@ python flux_style_finetune.py generate \
 - Iterate on generated images
 - Create variations of existing artwork
 - Style transfer between different art styles
-
----
 
 ## Advanced Features
 
@@ -339,8 +317,6 @@ python flux_style_finetune.py generate \
   --aspect-ratio 16:9 \
   --num-outputs 4
 ```
-
----
 
 ## Tips for Best Results
 
@@ -392,8 +368,6 @@ python flux_style_finetune.py generate \
 | `prompt-strength`     | 0.0-1.0  | 0.5-0.7    | (img2img) Higher = more transformation |
 | `num-inference-steps` | 1-50     | 28-35      | Higher = better quality, slower        |
 
----
-
 ## Prompt Library
 
 ```
@@ -438,8 +412,6 @@ Each prompt includes:
 - ✅ Usage notes from real testing
 - ✅ Tips for best results
 
----
-
 ## Cost Information
 
 ```
@@ -459,8 +431,6 @@ Each prompt includes:
 <p align="center">
   <img src="docs/diagrams/generation-costs.svg" alt="Generation Costs" width="700">
 </p>
-
----
 
 ## Examples
 
@@ -494,10 +464,6 @@ python flux_style_finetune.py generate \
   --aspect-ratio 16:9
 ```
 
-```
-    ═══════════════════════════════════════════════════════════
-```
-
 ### Example 2: 📸 Photo to Art Transformation
 
 Transform a photograph using your style:
@@ -513,10 +479,6 @@ python flux_style_finetune.py generate \
   --aspect-ratio 16:9
 ```
 
-```
-    ═══════════════════════════════════════════════════════════
-```
-
 ### Example 3: 🧑‍🎨 Character Portrait Generation
 
 Generate a detailed character portrait:
@@ -529,8 +491,6 @@ python flux_style_finetune.py generate \
   --guidance-scale 5.0 \
   --aspect-ratio 1:1
 ```
-
----
 
 ## Troubleshooting
 
@@ -583,8 +543,6 @@ Try adjusting:
 - Higher `--prompt-strength` (0.7-0.9) for more dramatic transformations
 - Ensure input image is high quality (1024px+ recommended)
 
----
-
 ## Project Structure
 
 ```
@@ -597,8 +555,6 @@ flux-tuning/
 ├── PROMPTS.md                 # Comprehensive prompt library
 └── outputs/                   # Generated images (created automatically)
 ```
-
----
 
 ## License
 
@@ -613,8 +569,6 @@ Issues and pull requests welcome! This is a community tool designed to make Flux
 - Built on [Replicate](https://replicate.com) infrastructure
 - Uses [Ostris Flux LoRA Trainer](https://replicate.com/ostris/flux-dev-lora-trainer)
 - Flux models by Black Forest Labs
-
----
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
