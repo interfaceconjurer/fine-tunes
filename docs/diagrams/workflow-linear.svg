@@ -24,6 +24,9 @@
           margin-bottom: 32px;
           letter-spacing: 1px;
           opacity: 0;
+        }
+
+        .container.animate .title {
           animation: fadeIn 0.5s ease-out forwards;
         }
 
@@ -40,12 +43,15 @@
           flex-direction: column;
           align-items: center;
           opacity: 0;
+        }
+
+        .container.animate .step-wrapper {
           animation: fadeInUp 0.6s ease-out forwards;
         }
 
-        .step-wrapper:nth-child(1) { animation-delay: 0.1s; }
-        .step-wrapper:nth-child(2) { animation-delay: 0.3s; }
-        .step-wrapper:nth-child(3) { animation-delay: 0.5s; }
+        .container.animate .step-wrapper:nth-child(1) { animation-delay: 0.1s; }
+        .container.animate .step-wrapper:nth-child(2) { animation-delay: 0.3s; }
+        .container.animate .step-wrapper:nth-child(3) { animation-delay: 0.5s; }
 
         .step {
           background: #f6f8fa;
@@ -94,11 +100,14 @@
           align-items: center;
           height: 120px;
           opacity: 0;
+        }
+
+        .container.animate .arrow-wrapper {
           animation: fadeIn 0.4s ease-out forwards;
         }
 
-        .arrow-wrapper:nth-child(2) { animation-delay: 0.25s; }
-        .arrow-wrapper:nth-child(4) { animation-delay: 0.45s; }
+        .container.animate .arrow-wrapper:nth-child(2) { animation-delay: 0.25s; }
+        .container.animate .arrow-wrapper:nth-child(4) { animation-delay: 0.45s; }
 
         .arrow {
           font-size: 28px;
@@ -211,6 +220,21 @@
           </div>
         </div>
       </div>
+      <script>
+        (function() {
+          const container = document.querySelector('.container');
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                container.classList.add('animate');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.2 });
+
+          observer.observe(container);
+        })();
+      </script>
     </div>
   </foreignObject>
 </svg>
