@@ -42,16 +42,13 @@
           display: flex;
           gap: 16px;
           opacity: 0;
-        }
-
-        .container.animate .checklist-item {
           animation: fadeInUp 0.5s ease-out forwards;
         }
 
-        .container.animate .checklist-item:nth-child(1) { animation-delay: 0.1s; }
-        .container.animate .checklist-item:nth-child(2) { animation-delay: 0.2s; }
-        .container.animate .checklist-item:nth-child(3) { animation-delay: 0.3s; }
-        .container.animate .checklist-item:nth-child(4) { animation-delay: 0.4s; }
+        .checklist-item:nth-child(1) { animation-delay: 0.1s; }
+        .checklist-item:nth-child(2) { animation-delay: 0.2s; }
+        .checklist-item:nth-child(3) { animation-delay: 0.3s; }
+        .checklist-item:nth-child(4) { animation-delay: 0.4s; }
 
         .check-icon {
           flex-shrink: 0;
@@ -158,21 +155,6 @@
           </div>
         </div>
       </div>
-      <script>
-        (function() {
-          const container = document.querySelector('.container');
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                container.classList.add('animate');
-                observer.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.2 });
-
-          observer.observe(container);
-        })();
-      </script>
     </div>
   </foreignObject>
 </svg>

@@ -24,9 +24,6 @@
           max-width: 600px;
           margin: 0 auto;
           opacity: 0;
-        }
-
-        .container.animate .card {
           animation: fadeInUp 0.6s ease-out forwards;
         }
 
@@ -290,21 +287,6 @@
           </div>
         </div>
       </div>
-      <script>
-        (function() {
-          const container = document.querySelector('.container');
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                container.classList.add('animate');
-                observer.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.2 });
-
-          observer.observe(container);
-        })();
-      </script>
     </div>
   </foreignObject>
 </svg>
