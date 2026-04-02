@@ -91,6 +91,10 @@ pip install -r requirements.txt
 
 ## Quick Start
 
+<p align="center">
+  <img src="docs/diagrams/quick-start.svg" alt="Quick Start Guide" width="900">
+</p>
+
 **Step 1️⃣ : Train Your Model**
 
 ```bash
