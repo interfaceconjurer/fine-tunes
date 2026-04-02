@@ -52,14 +52,14 @@ Here are some examples of what I created with this tool.
 
 <table>
   <tr>
-    <td><img src="outputs/android-dream-v4_20260325_223323_1.png" width="280"></td>
-    <td><img src="outputs/android-dream-v4_20260325_233347_1.png" width="280"></td>
-    <td><img src="outputs/android-dream-v4_20260325_234416_1.png" width="280"></td>
+    <td><img src="docs/gallery-1.png" width="280"></td>
+    <td><img src="docs/gallery-2.png" width="280"></td>
+    <td><img src="docs/gallery-3.png" width="280"></td>
   </tr>
   <tr>
-    <td><img src="outputs/android-dream-v4_20260325_235925_1.png" width="280"></td>
-    <td><img src="outputs/android-dream-v4_20260326_000455_1.png" width="280"></td>
-    <td><img src="outputs/android-dream-v4_20260326_133426_1.png" width="280"></td>
+    <td><img src="docs/gallery-4.png" width="280"></td>
+    <td><img src="docs/gallery-5.png" width="280"></td>
+    <td><img src="docs/gallery-6.png" width="280"></td>
   </tr>
 </table>
 
