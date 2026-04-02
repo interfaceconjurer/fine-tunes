@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
@@ -10,99 +10,80 @@
 
         .container {
           font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-          padding: 32px;
+          padding: 24px;
           background: #ffffff;
           width: 100%;
           height: 100%;
         }
 
-        .title {
-          text-align: center;
-          font-size: 18px;
-          font-weight: 700;
-          color: #1f2328;
-          margin-bottom: 32px;
-          letter-spacing: 1px;
-          opacity: 0;
-          animation: fadeIn 0.5s ease-out forwards;
-        }
-
         .pipeline {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 40px;
-          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 24px;
         }
 
         .step {
+          flex: 1;
           background: #f6f8fa;
           border: 2px solid #d1d9e0;
           border-radius: 12px;
-          padding: 24px;
-          position: relative;
+          padding: 20px;
           opacity: 0;
           animation: fadeInUp 0.6s ease-out forwards;
         }
 
         .step:nth-child(1) { animation-delay: 0.1s; }
-        .step:nth-child(2) { animation-delay: 0.4s; }
-        .step:nth-child(3) { animation-delay: 0.7s; }
-        .step:nth-child(4) { animation-delay: 1s; }
+        .step:nth-child(2) { animation-delay: 0.3s; }
+        .step:nth-child(3) { animation-delay: 0.5s; }
+
+        .arrow {
+          font-size: 32px;
+          color: #0969da;
+          opacity: 0;
+          animation: fadeIn 0.4s ease-out forwards;
+          flex-shrink: 0;
+        }
+
+        .arrow:nth-of-type(1) { animation-delay: 0.25s; }
+        .arrow:nth-of-type(2) { animation-delay: 0.45s; }
 
         .step-icon {
           font-size: 36px;
+          text-align: center;
           margin-bottom: 12px;
-          display: block;
         }
 
         .step-title {
           font-size: 14px;
           font-weight: 700;
           color: #0969da;
-          margin-bottom: 12px;
+          margin-bottom: 8px;
+          text-align: center;
           letter-spacing: 0.5px;
         }
 
-        .step-items {
-          list-style: none;
-          font-size: 13px;
+        .step-details {
+          font-size: 12px;
           color: #656d76;
-          line-height: 1.8;
+          line-height: 1.6;
+          margin-bottom: 12px;
         }
 
-        .step-items li:before {
-          content: "·";
-          margin-right: 8px;
-          font-weight: bold;
+        .step-details div {
+          margin-bottom: 4px;
         }
 
-        .arrow {
-          position: absolute;
-          color: #0969da;
-          font-size: 28px;
-          opacity: 0;
-          animation: fadeIn 0.4s ease-out forwards;
-        }
-
-        .arrow-right-1 {
-          top: 110px;
-          left: 50%;
-          transform: translateX(-50%);
-          animation-delay: 0.3s;
-        }
-
-        .arrow-down {
-          top: 50%;
-          right: -40px;
-          transform: translateY(-50%);
-          animation-delay: 0.6s;
-        }
-
-        .arrow-left {
-          bottom: 110px;
-          left: 50%;
-          transform: translateX(-50%);
-          animation-delay: 0.9s;
+        .command {
+          background: #ffffff;
+          border: 1px solid #d1d9e0;
+          border-radius: 6px;
+          padding: 8px;
+          font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+          font-size: 10px;
+          color: #8250df;
+          text-align: center;
+          word-break: break-all;
         }
 
         @keyframes fadeInUp {
@@ -126,66 +107,67 @@
             background: #0d1117;
           }
 
-          .title {
-            color: #e6edf3;
-          }
-
           .step {
             background: #161b22;
             border-color: #30363d;
+          }
+
+          .arrow {
+            color: #58a6ff;
           }
 
           .step-title {
             color: #58a6ff;
           }
 
-          .step-items {
+          .step-details {
             color: #8b949e;
           }
 
-          .arrow {
-            color: #58a6ff;
+          .command {
+            background: #0d1117;
+            border-color: #30363d;
+            color: #bc8cff;
           }
         }
       </style>
       <div class="container">
-        <div class="title">THE FLUX STYLE PIPELINE</div>
         <div class="pipeline">
           <div class="step">
-            <span class="step-icon">🖼️</span>
-            <div class="step-title">STEP 1: YOUR IMAGES</div>
-            <ul class="step-items">
-              <li>2-20 images</li>
-              <li>Your style</li>
-              <li>+ captions</li>
-            </ul>
+            <div class="step-icon">🖼️</div>
+            <div class="step-title">YOUR IMAGES</div>
+            <div class="step-details">
+              <div>• 2-20 images in your style</div>
+              <div>• Optional .txt captions</div>
+              <div>• PNG, JPG, JPEG, WebP</div>
+            </div>
+            <div class="command">Collect images</div>
           </div>
+
+          <div class="arrow">→</div>
+
           <div class="step">
-            <span class="step-icon">🚀</span>
-            <div class="step-title">STEP 2: TRAIN MODEL</div>
-            <ul class="step-items">
-              <li>10-20 mins</li>
-              <li>~$1.50 cost</li>
-              <li>GPU: T4</li>
-            </ul>
+            <div class="step-icon">🚀</div>
+            <div class="step-title">TRAIN MODEL</div>
+            <div class="step-details">
+              <div>• 10-20 minutes</div>
+              <div>• ~$1.50 for 1000 steps</div>
+              <div>• On Replicate</div>
+            </div>
+            <div class="command">flux_style_finetune.py train</div>
           </div>
+
+          <div class="arrow">→</div>
+
           <div class="step">
-            <span class="step-icon">✨</span>
-            <div class="step-title">STEP 3: CUSTOM LORA</div>
-            <ul class="step-items">
-              <li>Ready to use</li>
-              <li>On Replicate</li>
-              <li>Private</li>
-            </ul>
-          </div>
-          <div class="step">
-            <span class="step-icon">🎨</span>
-            <div class="step-title">STEP 4: GENERATE ART</div>
-            <ul class="step-items">
-              <li>Text-to-Img</li>
-              <li>Img-to-Img</li>
-              <li>Unlimited</li>
-            </ul>
+            <div class="step-icon">🎨</div>
+            <div class="step-title">GENERATE</div>
+            <div class="step-details">
+              <div>• Text-to-Image</div>
+              <div>• Image-to-Image</div>
+              <div>• Unlimited generations</div>
+            </div>
+            <div class="command">flux_style_finetune.py generate</div>
           </div>
         </div>
       </div>

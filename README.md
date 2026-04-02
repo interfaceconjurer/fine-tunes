@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/hero-image.png" alt="Flux Style Tuning" width="100%">
-</p>
-
 ```
   ███████╗██╗     ██╗   ██╗██╗  ██╗    ███████╗████████╗██╗   ██╗██╗     ███████╗
   ██╔════╝██║     ██║   ██║╚██╗██╔╝    ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝
@@ -18,141 +14,15 @@
               ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝
 ```
 
-[Python 3.10+](https://www.python.org/downloads/)
-[License: MIT](https://opensource.org/licenses/MIT)
-[Replicate](https://replicate.com)
+[Python 3.10+](https://www.python.org/downloads/) • [License: MIT](https://opensource.org/licenses/MIT) • [Replicate](https://replicate.com)
 
 _Train custom AI art models on your style • Generate infinite variations • Transform any image_
 
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║  A Python CLI tool for fine-tuning Flux 1 models on Replicate to learn and   ║
-║  replicate custom artistic styles. Train a model on your artwork, then       ║
-║  generate new images in that style with simple prompts.                      ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
-
-&nbsp;
-&nbsp;
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Workflow](#workflow)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage](#usage)
-  - [Training a Model](#training-a-model)
-  - [Checking Training Status](#checking-training-status)
-  - [Generating Images](#generating-images)
-  - [Image-to-Image Generation](#image-to-image-generation)
-- [Advanced Features](#advanced-features)
-- [Tips for Best Results](#tips-for-best-results)
-- [Prompt Library](#prompt-library)
-- [Cost Information](#cost-information)
-- [Examples](#examples)
-- [Troubleshooting](#troubleshooting)
-- [Project Structure](#project-structure)
-
-&nbsp;
-&nbsp;
-
-## Overview
-
-This tool simplifies the process of creating custom Flux LoRA models for style transfer. It handles the entire workflow:
+## How It Works
 
 <p align="center">
-  <img src="docs/diagrams/overview-cards.svg" alt="Flux Tuning Overview" width="800">
+  <img src="docs/diagrams/pipeline.svg" alt="Flux Style Pipeline" width="800">
 </p>
-
-<p align="center">
-  <img src="docs/diagrams/pipeline.svg" alt="Flux Style Pipeline" width="900">
-</p>
-
-<p align="center">
-  <img src="docs/diagrams/workflow-linear.svg" alt="Complete Flux Workflow" width="900">
-</p>
-
-<p align="center">
-  <img src="docs/diagrams/prerequisites.svg" alt="Prerequisites Checklist" width="800">
-</p>
-
-## Installation
-
-1. **Clone this repository**:
-
-```bash
-# Clone and navigate to the project
-git clone https://github.com/yourusername/flux-tuning.git
-cd flux-tuning
-```
-
-1. **Install dependencies**:
-
-```bash
-# Install required Python packages
-pip install -r requirements.txt
-```
-
-1. **Set up your Replicate API token**:
-   Get your token from [https://replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
-   Or create a `.env` file:
-
-&nbsp;
-&nbsp;
-
-## Quick Start
-
-<p align="center">
-  <img src="docs/diagrams/quick-start.svg" alt="Quick Start Guide" width="900">
-</p>
-
-**Step 1️⃣ : Train Your Model**
-
-```bash
-# Train a model on your artwork
-python flux_style_finetune.py train \
-  --images-dir ./my_artwork \
-  --model-name my-art-style \
-  --username your_replicate_username
-```
-
-```
-    ⏳ Training starts... (~10-20 minutes)
-```
-
-**Step 2️⃣ : Check Status**
-
-```bash
-# Monitor training progress
-python flux_style_finetune.py status
-```
-
-```
-    ✅ Training complete! Model ready to use.
-```
-
-**Step 3️⃣ : Generate Images**
-
-```bash
-# Generate images in your trained style
-python flux_style_finetune.py generate \
-  --prompt "a magical forest at sunset" \
-  --model-name my-art-style \
-  --username your_replicate_username
-```
-
-```
-    🎨 Generated image saved to ./outputs/
-```
-
-&nbsp;
-&nbsp;
-
-## Usage
-
-**Quick Commands:**
 
 ```bash
 # 1. Train your model
@@ -168,8 +38,46 @@ python flux_style_finetune.py generate --prompt "your prompt" --model-name my-st
 python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
 ```
 
-&nbsp;
-&nbsp;
+## Gallery
+
+Here are some examples of what I created with this tool.
+
+<!-- Add your generated images here -->
+
+For prompt inspiration, see [PROMPTS.md](PROMPTS.md) — a collection of 30+ battle-tested prompts with parameters and usage notes.
+
+## Getting Started
+
+<p align="center">
+  <img src="docs/diagrams/prerequisites.svg" alt="Prerequisites" width="800">
+</p>
+
+### Installation
+
+1. **Clone this repository**:
+
+```bash
+# Clone and navigate to the project
+git clone https://github.com/yourusername/flux-tuning.git
+cd flux-tuning
+```
+
+2. **Install dependencies**:
+
+```bash
+# Install required Python packages
+pip install -r requirements.txt
+```
+
+3. **Set up your Replicate API token**:
+
+Get your token from [https://replicate.com/account/api-tokens](https://replicate.com/account/api-tokens) or create a `.env` file with:
+
+```
+REPLICATE_API_TOKEN=r8_your_token_here
+```
+
+## Usage
 
 ### Training a Model
 
@@ -217,9 +125,6 @@ my_artwork/
 
 The tool will automatically include caption files when creating the training archive.
 
-&nbsp;
-&nbsp;
-
 ### Checking Training Status
 
 Check on your training progress:
@@ -238,9 +143,6 @@ Shows:
 - Elapsed time
 - Link to detailed logs
 - Instructions for generating images once complete
-
-&nbsp;
-&nbsp;
 
 ### Generating Images
 
@@ -270,9 +172,6 @@ python flux_style_finetune.py generate \
 - `--lora-scale` (optional): Strength of style application, 0.0-2.0 (default: 1.0)
 
 **Trigger word**: The tool automatically prepends your trigger word (e.g., "In the style of MYART") if not already in the prompt.
-
-&nbsp;
-&nbsp;
 
 ### Image-to-Image Generation
 
@@ -304,10 +203,7 @@ python flux_style_finetune.py generate \
 - Create variations of existing artwork
 - Style transfer between different art styles
 
-&nbsp;
-&nbsp;
-
-## Advanced Features
+## Tuning Guide
 
 ### LoRA Scale Control
 
@@ -322,7 +218,9 @@ python flux_style_finetune.py generate \
   --lora-scale 0.8
 ```
 
-**LoRA Scale Visual Guide**:
+<p align="center">
+  <img src="docs/diagrams/lora-scale.svg" alt="LoRA Scale Guide" width="800">
+</p>
 
 ### Combining Parameters
 
@@ -342,18 +240,7 @@ python flux_style_finetune.py generate \
   --num-outputs 4
 ```
 
-&nbsp;
-&nbsp;
-
-## Tips for Best Results
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║              💡 PRO TIPS FOR MAXIMUM QUALITY                         ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-### 🖼️ Training Data
+### Training Data
 
 - **Quality over quantity**: 10-20 high-quality images work better than 50 mediocre ones
 - **Consistency**: Images should represent a cohesive style
@@ -362,31 +249,13 @@ python flux_style_finetune.py generate \
 - **Clean images**: Avoid watermarks, text, or UI elements
 - **Custom captions**: Use `.txt` files for precise image descriptions
 
-### 🏷️ Trigger Words
+### Trigger Words
 
 - Use **unique, non-dictionary words** (e.g., "ZNDRART", "MYSTL") to avoid conflicts
 - Keep it **short and memorable** (one word preferred)
 - **Capitalize** to distinguish from normal prompt text
 
-### ⚙️ Training Steps
-
-| Steps | Quality | Cost   | Recommended For                   |
-| ----- | ------- | ------ | --------------------------------- |
-| 500   | Basic   | ~$0.75 | Quick tests, simple styles        |
-| 1000  | Good    | ~$1.50 | **Most use cases** (recommended)  |
-| 2000  | High    | ~$3.00 | Complex styles, professional work |
-
-⚠️ **Note**: More steps can lead to overfitting. Start with 1000 and adjust based on results.
-
-### ✍️ Prompting
-
-- Always include your trigger word or let the tool add it automatically
-- Be specific about composition, lighting, and subject details
-- Experiment with guidance scale (2.5-7.5 range)
-- Higher guidance scale (5.0-6.0) helps with specific details like clothing
-- Use negative prompts in complex scenarios
-
-### 📊 Parameter Quick Reference
+### Parameter Quick Reference
 
 | Parameter             | Range    | Sweet Spot | Effect                                 |
 | --------------------- | -------- | ---------- | -------------------------------------- |
@@ -395,133 +264,17 @@ python flux_style_finetune.py generate \
 | `prompt-strength`     | 0.0-1.0  | 0.5-0.7    | (img2img) Higher = more transformation |
 | `num-inference-steps` | 1-50     | 28-35      | Higher = better quality, slower        |
 
-## Prompt Library
+⚠️ **Note**: More training steps can lead to overfitting. Start with 1000 and adjust based on results.
 
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║              📚 COMPREHENSIVE PROMPT COLLECTION                      ║
-║                                                                      ║
-║         30+ Battle-Tested Prompts Ready to Use!                      ║
-║         → Check out PROMPTS.md for the full library                  ║
-╚══════════════════════════════════════════════════════════════════════╝
+## Costs
 
-┌──────────────────────────────────────────────────────────────────────┐
-│  🏙️  CITYSCAPE PROMPTS                                                │
-│     Neon-lit urban environments • Atmospheric fog • Dramatic scale   │
-│                                                                      │
-│  🏜️  DESERT WASTELAND PROMPTS                                         │
-│     Post-apocalyptic landscapes • Golden hour • Desolate beauty      │
-│                                                                      │
-│  🏠  INTERIOR & ENCLOSED SPACES                                       │
-│     Underground bars • Overgrown buildings • Intimate settings       │
-│                                                                      │
-│  🌊  ENVIRONMENTAL VARIATIONS                                         │
-│     Underwater ruins • Ice planets • Night markets • Unique biomes   │
-│                                                                      │
-│  🚀  SPACE & ORBITAL                                                  │
-│     Space stations • Cosmic backdrops • Orbital views • Sci-fi       │
-│                                                                      │
-│  🧑‍🚀  CHARACTER PORTRAITS                                              │
-│     Warriors • Cybernetic enhancements • Tactical gear • Detailed    │
-│                                                                      │
-│  💡  TIPS & TECHNIQUES                                                │
-│     Style keywords • Clothing control • Parameter recommendations    │
-│                                                                      │
-└──────────────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="docs/diagrams/costs.svg" alt="Cost Breakdown" width="800">
+</p>
 
-**➡️ [View Full Prompt Library (PROMPTS.md)](PROMPTS.md)**
-
-Each prompt includes:
-
-- ✅ Exact prompt text (copy & paste ready)
-- ✅ Recommended parameters (guidance-scale, aspect-ratio, etc.)
-- ✅ Usage notes from real testing
-- ✅ Tips for best results
-
-## Cost Information
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                       💰 PRICING BREAKDOWN                           ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-### Training Costs
-
-### Generation Costs
-
-## Examples
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                     📚 REAL-WORLD EXAMPLES                           ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-### Example 1: 🎨 Watercolor Style
-
-Train a watercolor style model:
-
-```bash
-# Train a watercolor-specific model with 1200 steps
-python flux_style_finetune.py train \
-  --images-dir ./watercolor_paintings \
-  --model-name watercolor-dream \
-  --username myusername \
-  --trigger-word WCDREAM \
-  --steps 1200
-```
-
-Generate a landscape in that style:
-
-```bash
-# Generate 4 landscape variations
-python flux_style_finetune.py generate \
-  --prompt "a serene mountain lake with pine trees" \
-  --model-name watercolor-dream \
-  --username myusername \
-  --num-outputs 4 \
-  --aspect-ratio 16:9
-```
-
-### Example 2: 📸 Photo to Art Transformation
-
-Transform a photograph using your style:
-
-```bash
-# Transform a photo with balanced settings
-python flux_style_finetune.py generate \
-  --prompt "artistic interpretation, dramatic lighting" \
-  --model-name watercolor-dream \
-  --username myusername \
-  --image ./vacation_photo.jpg \
-  --prompt-strength 0.6 \
-  --lora-scale 1.2 \
-  --aspect-ratio 16:9
-```
-
-### Example 3: 🧑‍🎨 Character Portrait Generation
-
-Generate a detailed character portrait:
-
-```bash
-# Generate a detailed portrait with higher guidance
-python flux_style_finetune.py generate \
-  --prompt "portrait of a weathered warrior, scarred face, dramatic lighting" \
-  --model-name my-art-style \
-  --username myusername \
-  --guidance-scale 5.0 \
-  --aspect-ratio 1:1
-```
+**Pro tip**: Use `--num-outputs 4` to generate 4 variations at once — it's faster and more cost-effective than running 4 separate generations.
 
 ## Troubleshooting
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                    🔧 COMMON ISSUES & SOLUTIONS                      ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
 
 ### "REPLICATE_API_TOKEN not set"
 
@@ -577,6 +330,8 @@ flux-tuning/
 ├── .env.example               # Environment variable template
 ├── README.md                  # This file
 ├── PROMPTS.md                 # Comprehensive prompt library
+├── docs/
+│   └── diagrams/              # SVG diagrams for README
 └── outputs/                   # Generated images (created automatically)
 ```
 
@@ -594,19 +349,6 @@ Issues and pull requests welcome! This is a community tool designed to make Flux
 - Uses [Ostris Flux LoRA Trainer](https://replicate.com/ostris/flux-dev-lora-trainer)
 - Flux models by Black Forest Labs
 
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                                                                      ║
-║                    Happy Creating! 🎨✨                             ║
-║                                                                      ║
-║         Transform your artistic vision into AI-powered reality       ║
-║                                                                      ║
-║  Questions? Check PROMPTS.md for inspiration & examples              ║
-║  Issues? Open a ticket on GitHub                                     ║
-║  Love it? Star the repo and share your creations!                    ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
+---
 
-        Made with ❤️ by the AI art community
-        Powered by Replicate • Flux • Black Forest Labs
-```
+Made with ❤️ by the AI art community · Powered by Replicate • Flux • Black Forest Labs
