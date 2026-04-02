@@ -89,6 +89,9 @@ pip install -r requirements.txt
    Get your token from [https://replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
    Or create a `.env` file:
 
+&nbsp;
+&nbsp;
+
 ## Quick Start
 
 <p align="center">
