@@ -18,6 +18,10 @@
 
 _Train custom AI art models on your style • Generate infinite variations • Transform any image_
 
+&nbsp;
+
+&nbsp;
+
 ## How It Works
 
 <p align="center">
@@ -38,6 +42,10 @@ python flux_style_finetune.py generate --prompt "your prompt" --model-name my-st
 python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
 ```
 
+&nbsp;
+
+&nbsp;
+
 ## Gallery
 
 Here are some examples of what I created with this tool.
@@ -45,6 +53,10 @@ Here are some examples of what I created with this tool.
 <!-- Add your generated images here -->
 
 For prompt inspiration, see [PROMPTS.md](PROMPTS.md) — a collection of 30+ battle-tested prompts with parameters and usage notes.
+
+&nbsp;
+
+&nbsp;
 
 ## Getting Started
 
@@ -76,6 +88,10 @@ Get your token from [https://replicate.com/account/api-tokens](https://replicate
 ```
 REPLICATE_API_TOKEN=r8_your_token_here
 ```
+
+&nbsp;
+
+&nbsp;
 
 ## Usage
 
@@ -203,6 +219,10 @@ python flux_style_finetune.py generate \
 - Create variations of existing artwork
 - Style transfer between different art styles
 
+&nbsp;
+
+&nbsp;
+
 ## Tuning Guide
 
 ### LoRA Scale Control
@@ -266,6 +286,10 @@ python flux_style_finetune.py generate \
 
 ⚠️ **Note**: More training steps can lead to overfitting. Start with 1000 and adjust based on results.
 
+&nbsp;
+
+&nbsp;
+
 ## Costs
 
 <p align="center">
@@ -273,6 +297,10 @@ python flux_style_finetune.py generate \
 </p>
 
 **Pro tip**: Use `--num-outputs 4` to generate 4 variations at once — it's faster and more cost-effective than running 4 separate generations.
+
+&nbsp;
+
+&nbsp;
 
 ## Troubleshooting
 
@@ -320,6 +348,10 @@ Try adjusting:
 - Higher `--prompt-strength` (0.7-0.9) for more dramatic transformations
 - Ensure input image is high quality (1024px+ recommended)
 
+&nbsp;
+
+&nbsp;
+
 ## Project Structure
 
 ```
@@ -335,13 +367,25 @@ flux-tuning/
 └── outputs/                   # Generated images (created automatically)
 ```
 
+&nbsp;
+
+&nbsp;
+
 ## License
 
 MIT License - feel free to use and modify as needed.
 
+&nbsp;
+
+&nbsp;
+
 ## Contributing
 
 Issues and pull requests welcome! This is a community tool designed to make Flux fine-tuning accessible.
+
+&nbsp;
+
+&nbsp;
 
 ## Acknowledgments
 
