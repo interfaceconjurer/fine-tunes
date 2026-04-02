@@ -32,6 +32,9 @@ _Train custom AI art models on your style • Generate infinite variations • T
 ╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
+&nbsp;
+&nbsp;
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
@@ -51,6 +54,9 @@ _Train custom AI art models on your style • Generate infinite variations • T
 - [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
 - [Project Structure](#project-structure)
+
+&nbsp;
+&nbsp;
 
 ## Overview
 
@@ -141,6 +147,9 @@ python flux_style_finetune.py generate \
     🎨 Generated image saved to ./outputs/
 ```
 
+&nbsp;
+&nbsp;
+
 ## Usage
 
 **Quick Commands:**
@@ -158,6 +167,9 @@ python flux_style_finetune.py generate --prompt "your prompt" --model-name my-st
 # 3b. Transform existing images (img2img)
 python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
 ```
+
+&nbsp;
+&nbsp;
 
 ### Training a Model
 
