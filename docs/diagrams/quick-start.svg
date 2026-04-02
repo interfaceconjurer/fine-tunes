@@ -102,10 +102,9 @@
           font-weight: 600;
         }
 
-        .success {
-          background: #dafbe1;
-          color: #0a3818;
-          border-color: #1a7f37;
+        .step-time.success {
+          color: #1a7f37;
+          font-weight: 700;
         }
 
         @keyframes fadeInUp {
@@ -150,10 +149,8 @@
             border-top-color: #30363d;
           }
 
-          .success {
-            background: #0d3818;
-            color: #4ac776;
-            border-color: #2ea043;
+          .step-time.success {
+            color: #3fb950;
           }
         }
       </style>
