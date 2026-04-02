@@ -217,6 +217,9 @@ my_artwork/
 
 The tool will automatically include caption files when creating the training archive.
 
+&nbsp;
+&nbsp;
+
 ### Checking Training Status
 
 Check on your training progress:
@@ -235,6 +238,9 @@ Shows:
 - Elapsed time
 - Link to detailed logs
 - Instructions for generating images once complete
+
+&nbsp;
+&nbsp;
 
 ### Generating Images
 
@@ -265,6 +271,9 @@ python flux_style_finetune.py generate \
 
 **Trigger word**: The tool automatically prepends your trigger word (e.g., "In the style of MYART") if not already in the prompt.
 
+&nbsp;
+&nbsp;
+
 ### Image-to-Image Generation
 
 Transform existing images using your trained style:
@@ -294,6 +303,9 @@ python flux_style_finetune.py generate \
 - Iterate on generated images
 - Create variations of existing artwork
 - Style transfer between different art styles
+
+&nbsp;
+&nbsp;
 
 ## Advanced Features
 
@@ -329,6 +341,9 @@ python flux_style_finetune.py generate \
   --aspect-ratio 16:9 \
   --num-outputs 4
 ```
+
+&nbsp;
+&nbsp;
 
 ## Tips for Best Results
 
