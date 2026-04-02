@@ -60,13 +60,9 @@ This tool simplifies the process of creating custom Flux LoRA models for style t
   <img src="docs/diagrams/overview-cards.svg" alt="Flux Tuning Overview" width="800">
 </p>
 
-## Workflow
-
 <p align="center">
   <img src="docs/diagrams/pipeline.svg" alt="Flux Style Pipeline" width="900">
 </p>
-
-**The Complete Pipeline:**
 
 <p align="center">
   <img src="docs/diagrams/workflow-linear.svg" alt="Complete Flux Workflow" width="900">
@@ -87,8 +83,6 @@ python flux_style_finetune.py generate --prompt "your prompt" --model-name my-st
 # 3b. Transform existing images (img2img)
 python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
 ```
-
-## Prerequisites
 
 <p align="center">
   <img src="docs/diagrams/prerequisites.svg" alt="Prerequisites Checklist" width="800">
