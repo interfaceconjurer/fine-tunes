@@ -1,0 +1,194 @@
+<svg fill="none" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .container {
+          font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+          padding: 32px;
+          background: #ffffff;
+          width: 100%;
+          height: 100%;
+        }
+
+        .title {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 700;
+          color: #1f2328;
+          margin-bottom: 32px;
+          letter-spacing: 1px;
+          opacity: 0;
+          animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .pipeline {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+          position: relative;
+        }
+
+        .step {
+          background: #f6f8fa;
+          border: 2px solid #d1d9e0;
+          border-radius: 12px;
+          padding: 24px;
+          position: relative;
+          opacity: 0;
+          animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .step:nth-child(1) { animation-delay: 0.1s; }
+        .step:nth-child(2) { animation-delay: 0.4s; }
+        .step:nth-child(3) { animation-delay: 0.7s; }
+        .step:nth-child(4) { animation-delay: 1s; }
+
+        .step-icon {
+          font-size: 36px;
+          margin-bottom: 12px;
+          display: block;
+        }
+
+        .step-title {
+          font-size: 14px;
+          font-weight: 700;
+          color: #0969da;
+          margin-bottom: 12px;
+          letter-spacing: 0.5px;
+        }
+
+        .step-items {
+          list-style: none;
+          font-size: 13px;
+          color: #656d76;
+          line-height: 1.8;
+        }
+
+        .step-items li:before {
+          content: "·";
+          margin-right: 8px;
+          font-weight: bold;
+        }
+
+        .arrow {
+          position: absolute;
+          color: #0969da;
+          font-size: 28px;
+          opacity: 0;
+          animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .arrow-right-1 {
+          top: 110px;
+          left: 50%;
+          transform: translateX(-50%);
+          animation-delay: 0.3s;
+        }
+
+        .arrow-down {
+          top: 50%;
+          right: -40px;
+          transform: translateY(-50%);
+          animation-delay: 0.6s;
+        }
+
+        .arrow-left {
+          bottom: 110px;
+          left: 50%;
+          transform: translateX(-50%);
+          animation-delay: 0.9s;
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(12px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .container {
+            background: #0d1117;
+          }
+
+          .title {
+            color: #e6edf3;
+          }
+
+          .step {
+            background: #161b22;
+            border-color: #30363d;
+          }
+
+          .step-title {
+            color: #58a6ff;
+          }
+
+          .step-items {
+            color: #8b949e;
+          }
+
+          .arrow {
+            color: #58a6ff;
+          }
+        }
+      </style>
+      <div class="container">
+        <div class="title">THE FLUX STYLE PIPELINE</div>
+        <div class="pipeline">
+          <div class="step">
+            <span class="step-icon">🖼️</span>
+            <div class="step-title">STEP 1: YOUR IMAGES</div>
+            <ul class="step-items">
+              <li>2-20 images</li>
+              <li>Your style</li>
+              <li>+ captions</li>
+            </ul>
+          </div>
+          <div class="step">
+            <span class="step-icon">🚀</span>
+            <div class="step-title">STEP 2: TRAIN MODEL</div>
+            <ul class="step-items">
+              <li>10-20 mins</li>
+              <li>~$1.50 cost</li>
+              <li>GPU: T4</li>
+            </ul>
+          </div>
+          <div class="step">
+            <span class="step-icon">✨</span>
+            <div class="step-title">STEP 3: CUSTOM LORA</div>
+            <ul class="step-items">
+              <li>Ready to use</li>
+              <li>On Replicate</li>
+              <li>Private</li>
+            </ul>
+          </div>
+          <div class="step">
+            <span class="step-icon">🎨</span>
+            <div class="step-title">STEP 4: GENERATE ART</div>
+            <ul class="step-items">
+              <li>Text-to-Img</li>
+              <li>Img-to-Img</li>
+              <li>Unlimited</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
