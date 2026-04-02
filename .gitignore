@@ -48,3 +48,9 @@ env/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Test files
+test-svgs.html
+
+# Salesforce
+.sfdx/
