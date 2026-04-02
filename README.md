@@ -68,22 +68,6 @@ This tool simplifies the process of creating custom Flux LoRA models for style t
   <img src="docs/diagrams/workflow-linear.svg" alt="Complete Flux Workflow" width="900">
 </p>
 
-**Quick Commands:**
-
-```bash
-# 1. Train your model
-python flux_style_finetune.py train --images-dir ./my_artwork --model-name my-style --username you
-
-# 2. Check training status
-python flux_style_finetune.py status
-
-# 3. Generate images
-python flux_style_finetune.py generate --prompt "your prompt" --model-name my-style --username you
-
-# 3b. Transform existing images (img2img)
-python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
-```
-
 <p align="center">
   <img src="docs/diagrams/prerequisites.svg" alt="Prerequisites Checklist" width="800">
 </p>
@@ -152,6 +136,22 @@ python flux_style_finetune.py generate \
 ```
 
 ## Usage
+
+**Quick Commands:**
+
+```bash
+# 1. Train your model
+python flux_style_finetune.py train --images-dir ./my_artwork --model-name my-style --username you
+
+# 2. Check training status
+python flux_style_finetune.py status
+
+# 3. Generate images
+python flux_style_finetune.py generate --prompt "your prompt" --model-name my-style --username you
+
+# 3b. Transform existing images (img2img)
+python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" --model-name my-style --username you
+```
 
 ### Training a Model
 
