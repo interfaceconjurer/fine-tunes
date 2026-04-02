@@ -1,0 +1,200 @@
+<svg fill="none" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .container {
+          font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+          padding: 32px;
+          background: #ffffff;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .title {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 700;
+          color: #1f2328;
+          margin-bottom: 8px;
+          letter-spacing: 0.5px;
+        }
+
+        .steps {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          flex: 1;
+        }
+
+        .step {
+          background: #f6f8fa;
+          border: 2px solid #d1d9e0;
+          border-radius: 12px;
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          opacity: 0;
+          animation: fadeInUp 0.6s ease-out forwards;
+          position: relative;
+        }
+
+        .step:nth-child(1) { animation-delay: 0.1s; }
+        .step:nth-child(2) { animation-delay: 0.3s; }
+        .step:nth-child(3) { animation-delay: 0.5s; }
+
+        .step-header {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .step-number {
+          flex-shrink: 0;
+          width: 36px;
+          height: 36px;
+          background: linear-gradient(135deg, #0969da 0%, #0550ae 100%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-weight: 700;
+          font-size: 18px;
+        }
+
+        .step-title {
+          font-size: 16px;
+          font-weight: 700;
+          color: #1f2328;
+          letter-spacing: 0.5px;
+        }
+
+        .step-icon {
+          font-size: 40px;
+          text-align: center;
+          margin: 8px 0;
+        }
+
+        .step-desc {
+          font-size: 13px;
+          color: #656d76;
+          line-height: 1.6;
+          text-align: center;
+          flex: 1;
+        }
+
+        .step-time {
+          text-align: center;
+          font-size: 12px;
+          color: #656d76;
+          padding-top: 12px;
+          border-top: 1px solid #d1d9e0;
+          font-weight: 600;
+        }
+
+        .success {
+          background: #dafbe1;
+          color: #0a3818;
+          border-color: #1a7f37;
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(12px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .container {
+            background: #0d1117;
+          }
+
+          .title {
+            color: #e6edf3;
+          }
+
+          .step {
+            background: #161b22;
+            border-color: #30363d;
+          }
+
+          .step-number {
+            background: linear-gradient(135deg, #2f81f7 0%, #1f6feb 100%);
+          }
+
+          .step-title {
+            color: #e6edf3;
+          }
+
+          .step-desc {
+            color: #8b949e;
+          }
+
+          .step-time {
+            color: #8b949e;
+            border-top-color: #30363d;
+          }
+
+          .success {
+            background: #0d3818;
+            color: #4ac776;
+            border-color: #2ea043;
+          }
+        }
+      </style>
+      <div class="container">
+        <div class="title">🚀 GET STARTED IN 3 STEPS</div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-header">
+              <div class="step-number">1</div>
+              <div class="step-title">TRAIN</div>
+            </div>
+            <div class="step-icon">🎨</div>
+            <div class="step-desc">
+              Upload your artwork and start training a custom style model
+            </div>
+            <div class="step-time">⏱️ 10-20 minutes</div>
+          </div>
+          <div class="step">
+            <div class="step-header">
+              <div class="step-number">2</div>
+              <div class="step-title">CHECK</div>
+            </div>
+            <div class="step-icon">📊</div>
+            <div class="step-desc">
+              Monitor training progress and get notified when your model is ready
+            </div>
+            <div class="step-time">⏱️ Real-time status</div>
+          </div>
+          <div class="step">
+            <div class="step-header">
+              <div class="step-number">3</div>
+              <div class="step-title">CREATE</div>
+            </div>
+            <div class="step-icon">✨</div>
+            <div class="step-desc">
+              Generate infinite images in your trained style with simple prompts
+            </div>
+            <div class="step-time success">✓ Ready to create!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
