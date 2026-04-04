@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/python_ascii.svg" alt="Green Tree Python ASCII Art" width="800">
+<img src="docs/python_ascii.svg" alt="Green Tree Python ASCII Art" width="400">
 
 <pre>
 ███████╗██╗     ██╗   ██╗██╗  ██╗██╗   ██╗
