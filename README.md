@@ -1,57 +1,15 @@
 <div align="center">
 
-```
-S##S SSSSSSSSSS   SS  #@$$$%%%%%%%%$$@@$$$$$$$$$$$$$$$$$$$$$@@@@@@&&&&&&&##       S         BB   BBB   SS#S   BBBBBB  S#
-S#### SS#SSS###    SS&$%%%%%%%%%%%%$@@@$$$@@@@@$%$$$%%$$$$$$$$@@@@@@@&&&&&&#S  S  S  S    B   BB      SS#S  BBBBBBBB  S#
-&&###SS##SSS&#SSSSSS&$%%%%%%%%%%%%%$@@@@@@@@@@@@$@@@$$%%$$$$$$$%**%@@&&&&&&&&###@##SSSS  BB     B     S#SS  BBBBBBBB   #
-&#########SSS#SS  S$%%%%%%%%%%%%%$@@@@@@@@@@@@$@@@&@@@$%%%$$$$$%%$:%@@@%@&&&&&&&&&##SSSS   BB        S#SS BBB BBBBBBBB #
-########S###SSSS S#$$%%%**%%%%%%$@@@@@@@$$$$$$$@@@@@@@@@%%$$$$$$$$%$@@@$&&&&&&&&&#####&&&&&#SSSSS   SSSS  BBBBBBBBBBBB  
-#&###  SSSSSSSSSSS&$%%%**%$$$$$@@@@@@@@@$$$$$$$$$@@@@@@@@$$$$$%%$$@@@@&&&@@@&&&&&@$$$%%$$$$$@@@@&&@#SSS    BBBBBBBBBBB B
-S#SSS    S S  SSSS$!%%%$@@@@@@@@$$@@@$$$$$%%%%$$$$@@@$@@&@%%%%%$$$$@@@@@@@@@@@$$%%%%%%%%$$$$%%%@&&#&SS      BBBBBBBB B B
- S     SSSS   SSS&:*$@@@@@@@@@@@$$@@@$$$$%%$%*%$$$$@%%@@&&%%%%%$$$@@@@@@@@@@$%***%%%%%%$$$:..!*&##SSS        BBBBBBBB   
-   BBBB SSS SSS#S&%&@@@@@@@@@@@@@@@@@@$$$$$$%%%$$$@@@@@@&****%$$$$@@@@$$@$%********%%%%!!$!*@@&&###SS         BBBBBBBBBB
- SSS     SSSSSSSS#&@@@@@@@@%$@@@@@@$@@$@@@@&$%%$$$@@@@@@@!*.*$$$$$@@$$$$$**!*******%%%%!%@&&&@&&#S             BBBBBBBBB
-SSSSSSSSSSSSS S #&&&@&&@@@@@@@@@@@@@@@@@&#&@%%%$$@@@@@@&@%*%$$$$$%$$$$$%**!*******%%%$$@@@@@&####SS            BBBBBBBBB
-SSS  SSSSSSSSSSS&&&&&&&&&@@@@@@@@@$$@$@S#%*%%$$$$@@@@@&#$*%$$$$$* %$$$%*!!***!***%%$%$@@@@&&&&@@@&S      BB    BBBBBBBBB
-    SSSSSSSSSS&&&&&&&&&&&@@@@@@@@@$$$$@&**%%$$$$$@@&@@#@%%%$$$$$!!%$$**!!!!!****%%%$$@@@&#&@%**%$$#BBBB  BBBBBBBBBBBBBB 
-SSS  SSSSSSSS&@&&&&&&&&&@@@@@@@@@@$$$$$#$%%$$$@$$@&@@#&%%%%$$$$$$$%%**!!!*!!**%%%%$@@@@&&@%***$&##SBBBBBBBBBBBBBBBBBBBBB
-SSSS  SS SSSS&&&&&&&@@&&@@@@@@@@@@@@@@&&$%$$$$$$@&@@#&%%%%%%%$$$$%$%*!!*!.:!*%%%%$$@@&&@%**$@####SS   BBBBB  BBBBBBBBBBB
-SS    SSSS  S&&&&&&&&&&&&&@@@@$$@@@@@&@$$$$$@$$@&@@S#%%%%%%%%$$$$$%**!**!.!***%$$@@@&&%*%@#S#####&####S  BBBBBBBBBBB B  
-         BBS#&&&&&&&&&&&&&@@@@@@@@@@@$%$$@@$$@&&@&SS$%%%%$$$$@@$$$**********. !@@@@&@%!$# S&#S##########SS BBBBBBBBBBBB 
-      BBBB#&&&&&&&&&&&&&@@@@&@@&&&@$$*%$$$$$@&&&&S @%$%%$$$$$@@$$%********%%**@@@@&@%%@#SS#SSSSSSS#######SS  BBBBBBBBBBB
-   BBBBBBS&&&&&&&&&&@&&&&#####S#&$$$$$*!!$@&&&&&S #$$$%%$$$$@@$$$*******%%%$$$$@@#&$$#########SSSSS####S###S   BBBBBBBBB
-  BBBBBBB ######&&###&&#SSS  S&$$$$@@@$$$@&&&&#SSS@$$%%$$$@@@@$$%*****%%%%$@$%$@SS@&SSS####SS######SSS#SS###SSS BBBBBBBB
-     BBBBBS&&@&&&&&&S  BBB S#@$$$@@@@@@&&&@&&#SS@$$$$%%$$$@@@@$$%%*%%%%%$$$@@@&# #S SSSSSSSSSSS#####SS#####S##SS  BBBBBB
-S S        S&&&&&###SBBBBB&@$$@@@@@@&&&&@@&&#S&%!!$$%%%$$@@@@$$%%%%%%%$$$@@&@&#BBB S#S S SSSSSS####&###S#######SSS BBBBB
-                 BBBBBBBBB&@@@@%@@@&&@@@@@&S#$!!!:*%%%$$$@@@@@$%%%%%%$$$@@&&&# BBBB       SSSSSS######&##S&&#####SS BBBB
-               BBBBBBBBBB @@&&@@@@@@@$@@@@#@*!!!!:*%%%$$%%@@@@$%%%%%$$$$@&&&& BBBBBBBBBB     SSSSS#####&#####&##SSSS    
-BB      BBBBBBBBBBBBBBBBB#@&&&@@@@@$$$$%%@$!!!!!!*%%%$$$$!$@@@$%$$$$$$$@&&&&SBBBBBBBBBBBBBBB S SSS#&#&####&##&###S#SSSS 
-BBBBBBBBBBBBBBBBBBBBBBBBB@$&@@@@$$$$%%**!%*!!!!**%%%$$$$@@@@@@$$$$$$$@@&&&&# BBBBBBBBBBBBBBBB   SS####&#SS##&##&&###SSS 
-BBB BB   BBBBBBBBBBBBBBBB#@&@@$$$$$%***!!!!!****%%%$$$$@@@@$&@$$$$$@@$%@#&# BBBBBBBBBBBBBBBB  SSSSS##&#&####&#####SS#SSS
-BBBBB   BBBBBBBBBBBBBBB B @@@@$$$$%%**********%%%%$$$@@@&@@&@@$$$@@@@$*@##SBBBBBBBBBBBBBB SSSS SSSSS##&&&&SSSS#S#&SS#S S
-BBBBBBB B  BBBBBBBBBBBBSSB#@@@$$$$%%%%*****%%%%%$$$$$@@&@@&&@@$@@@@&&&###S BBBBBBBBBBBBBSSSSSSSSSSSSS#&&&&&SSSS#S#SS##SS
-          BBBBBBBBBBBBBSSB &@@@$$$$%%%%%%%%%%$$$$$@@@&&&&&&#&@@@@@&&&###S BBBBBBBBBBBB SSS#SSSSS SSSS##&###SSSS#SSSSS#SS
-   S&#    BBBBBBBBBBBBB S B &@@@@@$$$$$$$$$$$$$@@@@@&&&&##S&@@@@@&&$&##S BBBBBBBBBBB SSSS#SSSSS      S##&###S SSSSSSSSSS
-   &@@#   BBBBBBBBBBB BBSSBBS#&@@@@$@$$$$$@@@@@@@&&&&&&#SS&@&&&&&&&$@#S BBBBBBBBBB SSS####SSS         SSS#SSS  SS  SSSS 
-SS#@$$@#    BBBBBBBBB SBSSBSSB S&@@@@@@@@@@@@$@&&&&&#SS S&@&&&&####&&SBBBBBBBBBB SSSSSS##SS                 S           
-S#@$$$$@S   BBBBBBBBBB   SSSBBBB SS@%&&&&&&&$%&&##S  B #&&&&&####@## BBBBBBBBBB SSSSSS##S      S#S             B       B
-S#@$@$$$&#SS   BBBBBBB  S#S     BB  SSSSSS##SS   BBBBS#&########S#SBBBBBBBBBBB SSSSSSSSS      S#SBBBB         BBB B BBBB
-#&@@@@@$@&####S   BBB   S#SSS       SSS  BBBBBBBBB S####&@@#SS  BBBBBBBBBBBBBBSSSSSSSSSS     SSBB S BBBBBBBBBBBBBBBBBBBB
-&@$$$@@@@@###SSSSSS      S#S      SSSSS  BBBBBBBBBBBBBBB  BBBBBBBBBBBBBBBBBBBBSSS    S      S BB S BBBBBBBBBBBBBBBBBBBBB
-@$$$@@@@@$@#SSSSSSSSSS   SSSS    SSSS   BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBS      S B   S BB  BBBBBBBBBBBBBBBBBBBBBBB
-@@$@@@@@@@$@#SSSSSSSSSSSSSS     S  SSSS   BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB         B   BBB BBBBBBBBBBBBBBBBBBBBBBBBB
-$$$$@@@@@@@@@#S SSSS                    SSS     BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB       B   BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-$$@$$@@@@@@@@@#SSS                            SS          BBBBBBBBBBBBBBBBBBBBBBB BBB B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-$@@$$@@@@@@@@@@#S                                              BBBBBBBBBBBBB BB BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-@@$$@@@@@@@@@$@@#S                                       SSSSSBBBBBBBBBBBBB   BBBBB BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+<img src="docs/python_ascii.svg" alt="Green Tree Python ASCII Art" width="800">
 
+<pre>
 ███████╗██╗     ██╗   ██╗██╗  ██╗██╗   ██╗
 ██╔════╝██║     ██║   ██║╚██╗██╔╝╚██╗ ██╔╝
 █████╗  ██║     ██║   ██║ ╚███╔╝  ╚████╔╝ 
 ██╔══╝  ██║     ██║   ██║ ██╔██╗   ╚██╔╝  
 ██║     ███████╗╚██████╔╝██╔╝ ██╗   ██║   
 ╚═╝     ╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   
-```
+</pre>
 
 </div>
 
