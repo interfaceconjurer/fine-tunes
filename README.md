@@ -1,6 +1,6 @@
 <div align="center">
 
-<table border="0" cellpadding="0" cellspacing="0">
+<table border="0" cellpadding="0" cellspacing="0" style="border-radius: 8px; overflow: hidden;">
   <tr>
     <td align="center">
       <img src="docs/python_ascii.svg" alt="Pink Python ASCII Art" width="800">
