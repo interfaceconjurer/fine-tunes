@@ -21,29 +21,6 @@ _Train custom AI art models on your style • Generate infinite variations • T
 
 &nbsp;
 
-## Gallery
-
-Here are some examples of what I created with this tool.
-
-<table>
-  <tr>
-    <td><img src="docs/gallery-1.png" width="280"></td>
-    <td><img src="docs/gallery-2.png" width="280"></td>
-    <td><img src="docs/gallery-3.png" width="280"></td>
-  </tr>
-  <tr>
-    <td><img src="docs/gallery-4.png" width="280"></td>
-    <td><img src="docs/gallery-5.png" width="280"></td>
-    <td><img src="docs/gallery-6.png" width="280"></td>
-  </tr>
-</table>
-
-For prompt inspiration, see [PROMPTS.md](PROMPTS.md) — a collection of 30+ battle-tested prompts with parameters and usage notes.
-
-&nbsp;
-
-&nbsp;
-
 ## How It Works
 
 <p align="center">
@@ -376,6 +353,29 @@ flux-tuning/
 │   └── diagrams/              # SVG diagrams for README
 └── outputs/                   # Generated images (created automatically)
 ```
+
+&nbsp;
+
+&nbsp;
+
+## Gallery
+
+Here are some examples of what I created with this tool.
+
+<table>
+  <tr>
+    <td><img src="docs/gallery-1.png" width="280"></td>
+    <td><img src="docs/gallery-2.png" width="280"></td>
+    <td><img src="docs/gallery-3.png" width="280"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/gallery-4.png" width="280"></td>
+    <td><img src="docs/gallery-5.png" width="280"></td>
+    <td><img src="docs/gallery-6.png" width="280"></td>
+  </tr>
+</table>
+
+For prompt inspiration, see [PROMPTS.md](PROMPTS.md) — a collection of 30+ battle-tested prompts with parameters and usage notes.
 
 &nbsp;
 
