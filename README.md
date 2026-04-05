@@ -26,6 +26,8 @@
 
 _Train custom AI art models on your style • Generate infinite variations • Transform any image_
 
+**A Python CLI tool that makes Flux fine-tuning accessible to everyone.** Upload your artwork, train a custom model in the cloud via Replicate, and generate images that capture your unique style—no GPU required. Perfect for artists, designers, and creators who want to leverage AI without the infrastructure headaches.
+
 &nbsp;
 
 &nbsp;
