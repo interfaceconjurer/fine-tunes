@@ -32,7 +32,7 @@ class AsciiArtParser(HTMLParser):
             self.in_pre = False
 
 # Read the HTML file
-with open('/Users/j.wright/git-repos/ascii-image-generator/samples/fine_tunes_stars.html', 'r') as f:
+with open('/Users/j.wright/git-repos/ascii-image-generator/samples/fine_tunes_rainbow.html', 'r') as f:
     html_content = f.read()
 
 # Parse it
@@ -79,13 +79,12 @@ svg_lines = [
 ]
 
 y = char_height
-bright_pink = '#FF1493'  # Bright pink with no transparency
 for line in lines:
     x = 0
     for char, color in line:
         if char != ' ' and color != 'rgb(0,0,0)':
-            # Use bright pink for all non-black characters
-            svg_lines.append(f'  <text x="{x}" y="{y}" fill="{bright_pink}">{char}</text>')
+            # Use the original color from the HTML (preserves rainbow effect)
+            svg_lines.append(f'  <text x="{x}" y="{y}" fill="{color}">{char}</text>')
         x += char_width
     y += char_height
 
