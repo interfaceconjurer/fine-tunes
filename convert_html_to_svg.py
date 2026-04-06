@@ -32,7 +32,7 @@ class AsciiArtParser(HTMLParser):
             self.in_pre = False
 
 # Read the HTML file
-with open('/Users/j.wright/git-repos/ascii-image-generator/samples/fine_tunes_dots.html', 'r') as f:
+with open('/Users/j.wright/git-repos/ascii-image-generator/samples/fine_tunes_stars.html', 'r') as f:
     html_content = f.read()
 
 # Parse it
