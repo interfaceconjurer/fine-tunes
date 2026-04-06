@@ -31,15 +31,15 @@ class AsciiArtParser(HTMLParser):
         if tag == 'pre':
             self.in_pre = False
 
-def brighten_color(rgb_string):
-    """Darken colors significantly for better contrast on light backgrounds"""
+def invert_color(rgb_string):
+    """Invert colors for light mode - what's bright in dark mode becomes dark in light mode"""
     match = re.search(r'rgb\((\d+),(\d+),(\d+)\)', rgb_string)
     if match:
         r, g, b = map(int, match.groups())
-        # Darken by 85% for light mode (much more vibrant and visible)
-        r = max(0, int(r * 0.15))
-        g = max(0, int(g * 0.15))
-        b = max(0, int(b * 0.15))
+        # Invert each color channel
+        r = 255 - r
+        g = 255 - g
+        b = 255 - b
         return f'rgb({r},{g},{b})'
     return rgb_string
 
@@ -121,8 +121,8 @@ for line in lines:
     x = 0
     for char, color in line:
         if char != ' ' and color != 'rgb(0,0,0)':
-            # Darken colors for light mode
-            light_color = brighten_color(color)
+            # Invert colors for light mode
+            light_color = invert_color(color)
             svg_lines_light.append(f'  <text x="{x}" y="{y}" fill="{light_color}">{char}</text>')
         x += char_width
     y += char_height
