@@ -3,12 +3,12 @@
 <table border="0" cellpadding="0" cellspacing="0" style="border-radius: 8px; overflow: hidden;">
   <tr>
     <td align="center">
+      <img src="docs/wavy_snake.svg" alt="Wavy Snake ASCII Art" width="800">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <pre>
-             ╭─╮    ╭─╮    ╭─╮    ╭─╮
-            ╱   ╲  ╱   ╲  ╱   ╲  ╱   ╲
-           ╱     ╲╱     ╲╱     ╲╱     ╲
-
-
 ███████╗██╗███╗   ██╗███████╗    ████████╗██╗   ██╗███╗   ██╗███████╗███████╗
 ██╔════╝██║████╗  ██║██╔════╝    ╚══██╔══╝██║   ██║████╗  ██║██╔════╝██╔════╝
 █████╗  ██║██╔██╗ ██║█████╗         ██║   ██║   ██║██╔██╗ ██║█████╗  ███████╗
