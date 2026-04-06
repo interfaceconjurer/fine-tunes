@@ -73,7 +73,6 @@ width = max_width * char_width
 # Generate SVG
 svg_lines = [
     f'<svg width="{int(width)}" height="{int(height)}" xmlns="http://www.w3.org/2000/svg">',
-    '  <rect width="100%" height="100%" fill="#000000"/>',
     '  <style>',
     f'    text {{ font-family: "Courier New", monospace; font-size: 12px; }}',
     '  </style>'
