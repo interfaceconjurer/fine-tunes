@@ -36,10 +36,10 @@ def brighten_color(rgb_string):
     match = re.search(r'rgb\((\d+),(\d+),(\d+)\)', rgb_string)
     if match:
         r, g, b = map(int, match.groups())
-        # Darken by 60% for light mode (more vibrant and visible)
-        r = max(0, int(r * 0.4))
-        g = max(0, int(g * 0.4))
-        b = max(0, int(b * 0.4))
+        # Darken by 85% for light mode (much more vibrant and visible)
+        r = max(0, int(r * 0.15))
+        g = max(0, int(g * 0.15))
+        b = max(0, int(b * 0.15))
         return f'rgb({r},{g},{b})'
     return rgb_string
 
