@@ -32,7 +32,7 @@ class AsciiArtParser(HTMLParser):
             self.in_pre = False
 
 # Read the HTML file
-with open('/Users/j.wright/git-repos/ascii-image-generator/samples/wavy_snake_dots.html', 'r') as f:
+with open('/Users/j.wright/git-repos/ascii-image-generator/samples/fine_tunes_dots.html', 'r') as f:
     html_content = f.read()
 
 # Parse it
@@ -51,7 +51,7 @@ for char, color in parser.chars:
 if current_line:
     lines.append(current_line)
 
-# Find non-empty lines (where snake actually is)
+# Find non-empty lines (where content actually is)
 non_empty = []
 for i, line in enumerate(lines):
     has_content = any(char != ' ' and color != 'rgb(0,0,0)' for char, color in line)
@@ -91,7 +91,7 @@ for line in lines:
 svg_lines.append('</svg>')
 
 # Write SVG
-svg_path = '/Users/j.wright/git-repos/flux-tuning/docs/wavy_snake.svg'
+svg_path = '/Users/j.wright/git-repos/flux-tuning/docs/fine_tunes_logo.svg'
 with open(svg_path, 'w') as f:
     f.write('\n'.join(svg_lines))
 
