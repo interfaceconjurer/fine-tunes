@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="docs/fine_tunes_logo.svg" alt="FINE TUNES" width="800">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/fine_tunes_logo_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/fine_tunes_logo_light.svg">
+  <img src="docs/fine_tunes_logo_dark.svg" alt="FINE TUNES" width="800">
+</picture>
 
 </div>
 
