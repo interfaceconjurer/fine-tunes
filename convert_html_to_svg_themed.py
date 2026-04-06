@@ -32,14 +32,14 @@ class AsciiArtParser(HTMLParser):
             self.in_pre = False
 
 def brighten_color(rgb_string):
-    """Brighten a color for better visibility on light backgrounds"""
+    """Darken colors significantly for better contrast on light backgrounds"""
     match = re.search(r'rgb\((\d+),(\d+),(\d+)\)', rgb_string)
     if match:
         r, g, b = map(int, match.groups())
-        # Darken by 30% for light mode
-        r = max(0, int(r * 0.7))
-        g = max(0, int(g * 0.7))
-        b = max(0, int(b * 0.7))
+        # Darken by 60% for light mode (more vibrant and visible)
+        r = max(0, int(r * 0.4))
+        g = max(0, int(g * 0.4))
+        b = max(0, int(b * 0.4))
         return f'rgb({r},{g},{b})'
     return rgb_string
 
