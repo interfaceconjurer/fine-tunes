@@ -1,0 +1,61 @@
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .title { fill: #0969da; font-family: system-ui, sans-serif; font-size: 14px; font-weight: 700; }
+    .detail { fill: #656d76; font-family: system-ui, sans-serif; font-size: 12px; }
+    .command { fill: #8250df; font-family: monospace; font-size: 10px; }
+    .command-box { fill: #ffffff; stroke: #d1d9e0; stroke-width: 1; }
+    .arrow { fill: #0969da; font-size: 32px; font-family: system-ui, sans-serif; }
+    .icon { font-size: 36px; font-family: system-ui, sans-serif; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; }
+      .box { fill: #161b22; stroke: #30363d; }
+      .title { fill: #58a6ff; }
+      .detail { fill: #8b949e; }
+      .command { fill: #bc8cff; }
+      .command-box { fill: #0d1117; stroke: #30363d; }
+      .arrow { fill: #58a6ff; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="900" height="300"/>
+
+  <!-- Step 1: Your Images -->
+  <rect class="box" x="30" y="60" width="220" height="180" rx="12"/>
+  <text class="icon" x="140" y="105" text-anchor="middle">🖼️</text>
+  <text class="title" x="140" y="135" text-anchor="middle">YOUR IMAGES</text>
+  <text class="detail" x="140" y="160" text-anchor="middle">• 2-20 images in your style</text>
+  <text class="detail" x="140" y="178" text-anchor="middle">• Optional .txt captions</text>
+  <text class="detail" x="140" y="196" text-anchor="middle">• PNG, JPG, JPEG, WebP</text>
+  <rect class="command-box" x="50" y="208" width="180" height="24" rx="6"/>
+  <text class="command" x="140" y="224" text-anchor="middle">Collect images</text>
+
+  <!-- Arrow 1 -->
+  <text class="arrow" x="270" y="160" text-anchor="middle">→</text>
+
+  <!-- Step 2: Train Model -->
+  <rect class="box" x="340" y="60" width="220" height="180" rx="12"/>
+  <text class="icon" x="450" y="105" text-anchor="middle">🚀</text>
+  <text class="title" x="450" y="135" text-anchor="middle">TRAIN MODEL</text>
+  <text class="detail" x="450" y="160" text-anchor="middle">• 10-20 minutes</text>
+  <text class="detail" x="450" y="178" text-anchor="middle">• ~$1.50 for 1000 steps</text>
+  <text class="detail" x="450" y="196" text-anchor="middle">• On Replicate</text>
+  <rect class="command-box" x="360" y="208" width="180" height="24" rx="6"/>
+  <text class="command" x="450" y="224" text-anchor="middle">flux_style_finetune.py train</text>
+
+  <!-- Arrow 2 -->
+  <text class="arrow" x="580" y="160" text-anchor="middle">→</text>
+
+  <!-- Step 3: Generate -->
+  <rect class="box" x="650" y="60" width="220" height="180" rx="12"/>
+  <text class="icon" x="760" y="105" text-anchor="middle">🎨</text>
+  <text class="title" x="760" y="135" text-anchor="middle">GENERATE</text>
+  <text class="detail" x="760" y="160" text-anchor="middle">• Text-to-Image</text>
+  <text class="detail" x="760" y="178" text-anchor="middle">• Image-to-Image</text>
+  <text class="detail" x="760" y="196" text-anchor="middle">• Unlimited generations</text>
+  <rect class="command-box" x="670" y="208" width="180" height="24" rx="6"/>
+  <text class="command" x="760" y="224" text-anchor="middle">flux_style_finetune.py generate</text>
+</svg>
