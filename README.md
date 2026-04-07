@@ -21,7 +21,7 @@ _Train custom AI art models on your style • Generate infinite variations • T
 ## How It Works
 
 <p align="center">
-  <img src="docs/diagrams/pipeline.svg" alt="Flux Style Pipeline" width="800">
+  <img src="docs/diagrams/pipeline_raw_svg.svg" alt="Flux Style Pipeline" width="800">
 </p>
 
 ```bash
@@ -45,7 +45,7 @@ python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" -
 ## Getting Started
 
 <p align="center">
-  <img src="docs/diagrams/prerequisites.svg" alt="Prerequisites" width="800">
+  <img src="docs/diagrams/prerequisites_raw_svg.svg" alt="Prerequisites" width="800">
 </p>
 
 ### Installation
@@ -223,7 +223,7 @@ python flux_style_finetune.py generate \
 ```
 
 <p align="center">
-  <img src="docs/diagrams/lora-scale.svg" alt="LoRA Scale Guide" width="800">
+  <img src="docs/diagrams/lora-scale_raw_svg.svg" alt="LoRA Scale Guide" width="800">
 </p>
 
 ### Combining Parameters
@@ -277,7 +277,7 @@ python flux_style_finetune.py generate \
 ## Costs
 
 <p align="center">
-  <img src="docs/diagrams/costs.svg" alt="Cost Breakdown" width="800">
+  <img src="docs/diagrams/costs_raw_svg.svg" alt="Cost Breakdown" width="800">
 </p>
 
 **Pro tip**: Use `--num-outputs 4` to generate 4 variations at once — it's faster and more cost-effective than running 4 separate generations.
