@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/fine_tunes_logo_dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="docs/fine_tunes_logo_light.svg">
-  <img src="docs/fine_tunes_logo_dark.svg" alt="FINE TUNES" width="800">
+  <img src="docs/fine_tunes_logo_dark.svg" alt="FINE TUNES" width="100%">
 </picture>
 
 </div>
@@ -24,7 +24,7 @@ _Train custom AI art models on your style • Generate infinite variations • T
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/Pipeline — Dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="docs/diagrams/Pipeline — Light.svg">
-    <img src="docs/diagrams/Pipeline — Dark.svg" alt="Flux Style Pipeline" width="800">
+    <img src="docs/diagrams/Pipeline — Dark.svg" alt="Flux Style Pipeline" width="100%">
   </picture>
 </p>
 
@@ -52,7 +52,7 @@ python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" -
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/Prerequisites Checklist — Dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="docs/diagrams/Prerequisites Checklist — Light.svg">
-    <img src="docs/diagrams/Prerequisites Checklist — Dark.svg" alt="Prerequisites" width="800">
+    <img src="docs/diagrams/Prerequisites Checklist — Dark.svg" alt="Prerequisites" width="100%">
   </picture>
 </p>
 
@@ -234,7 +234,7 @@ python flux_style_finetune.py generate \
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/LoRA Scale Guide — Dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="docs/diagrams/LoRA Scale Guide — Light.svg">
-    <img src="docs/diagrams/LoRA Scale Guide — Dark.svg" alt="LoRA Scale Guide" width="800">
+    <img src="docs/diagrams/LoRA Scale Guide — Dark.svg" alt="LoRA Scale Guide" width="100%">
   </picture>
 </p>
 
@@ -292,7 +292,7 @@ python flux_style_finetune.py generate \
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/Costs — Dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="docs/diagrams/Costs — Light.svg">
-    <img src="docs/diagrams/Costs — Dark.svg" alt="Cost Breakdown" width="800">
+    <img src="docs/diagrams/Costs — Dark.svg" alt="Cost Breakdown" width="100%">
   </picture>
 </p>
 
@@ -377,14 +377,14 @@ Here are some examples of what I created with this tool.
 
 <table>
   <tr>
-    <td><img src="docs/gallery-1.png" width="280"></td>
-    <td><img src="docs/gallery-2.png" width="280"></td>
-    <td><img src="docs/gallery-3.png" width="280"></td>
+    <td><img src="docs/gallery-1.png" width="100%"></td>
+    <td><img src="docs/gallery-2.png" width="100%"></td>
+    <td><img src="docs/gallery-3.png" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="docs/gallery-4.png" width="280"></td>
-    <td><img src="docs/gallery-5.png" width="280"></td>
-    <td><img src="docs/gallery-6.png" width="280"></td>
+    <td><img src="docs/gallery-4.png" width="100%"></td>
+    <td><img src="docs/gallery-5.png" width="100%"></td>
+    <td><img src="docs/gallery-6.png" width="100%"></td>
   </tr>
 </table>
 
