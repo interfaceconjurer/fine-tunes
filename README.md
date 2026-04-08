@@ -80,8 +80,8 @@ python flux_style_finetune.py generate --image ./photo.jpg --prompt "style it" -
 
 ```bash
 # Clone and navigate to the project
-git clone https://github.com/yourusername/flux-tuning.git
-cd flux-tuning
+git clone https://github.com/yourusername/fine-tunes.git
+cd fine-tunes
 ```
 
 2. **Install dependencies**:
@@ -373,7 +373,7 @@ Try adjusting:
 ## Project Structure
 
 ```
-flux-tuning/
+fine-tunes/
 ├── flux_style_finetune.py    # Main CLI script
 ├── requirements.txt           # Python dependencies
 ├── .gitignore                 # Git ignore patterns
