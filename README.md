@@ -389,7 +389,7 @@ flux-tuning/
 
 &nbsp;
 
-## Gallery
+## What I Created
 
 ### Model: Android Dream v4
 
@@ -397,7 +397,7 @@ flux-tuning/
 
 A custom Flux LoRA model trained on painterly illustrated poster art inspired by Blade Runner 2049. The style features atmospheric cyberpunk cityscapes with dramatic scale — tiny silhouetted figures dwarfed by massive holographic projections and towering brutalist architecture. Defined by bold warm-vs-cool color palettes (orange and red ground planes against blue-teal structures), heavy atmospheric perspective, soft diffused edges, and moody god rays cutting through fog. Compositions emphasize vertical depth, dystopian grandeur, and contemplative isolation.
 
-<p align="center">
+<p align="left">
   <img src="docs/android-dream-v4-cover.webp" alt="Android Dream v4 Cover" width="60%">
 </p>
 
