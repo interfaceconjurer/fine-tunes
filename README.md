@@ -424,6 +424,16 @@ A custom Flux LoRA model trained on painterly illustrated poster art inspired by
     <td><img src="docs/gallery-5.png" width="100%"></td>
     <td><img src="docs/gallery-6.png" width="100%"></td>
   </tr>
+  <tr>
+    <td><img src="docs/gallery-7.png" width="100%"></td>
+    <td><img src="docs/gallery-8.png" width="100%"></td>
+    <td><img src="docs/gallery-9.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/gallery-10.png" width="100%"></td>
+    <td><img src="docs/gallery-11.png" width="100%"></td>
+    <td><img src="docs/gallery-12.png" width="100%"></td>
+  </tr>
 </table>
 
 For prompt inspiration, see [PROMPTS.md](PROMPTS.md) — a collection of 30+ battle-tested prompts with parameters and usage notes.
