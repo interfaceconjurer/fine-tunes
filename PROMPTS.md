@@ -28,7 +28,7 @@ vast city scape, night life, androids, ambient light, neon highlights, beautiful
 vast city scape, night life, androids, ambient light, neon highlights, woman hologram wearing full black tactical bodysuit with armor plates, fully covered, dressed, clothed figure
 ```
 
-_Parameters: --guidance-scale 6.0_
+*Parameters: --guidance-scale 6.0*
 
 ### Cityscape with Non-Hologram Woman
 
@@ -36,7 +36,7 @@ _Parameters: --guidance-scale 6.0_
 vast city scape, night life, androids, ambient light, neon highlights, woman wearing full black tactical bodysuit with armor plates, fully covered, dressed, clothed figure
 ```
 
-_Parameters: --guidance-scale 6.0_
+*Parameters: --guidance-scale 6.0*
 
 ### Expansive Misty Cityscape
 
@@ -148,7 +148,7 @@ enormous space station orbiting Earth, industrial architecture, docking bays wit
 portrait of weathered male warrior, scarred face, cybernetic eye implant glowing red, black tactical armor with worn plates, rain droplets on face, dramatic side lighting, intense gaze, atmospheric fog background
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Soldier at Sunset
 
@@ -156,7 +156,7 @@ _Parameters: --guidance-scale 5.0_
 portrait of stoic male soldier, shaved head, facial scars, wearing heavy combat armor with helmet under arm, orange sunset lighting from side, weathered expression, atmospheric smoke, battle-worn
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Grizzled Veteran
 
@@ -164,7 +164,7 @@ _Parameters: --guidance-scale 5.0_
 close-up portrait of grizzled warrior, gray beard, cybernetic jaw replacement visible, tactical vest with ammunition, rain on face, blue atmospheric lighting, thousand yard stare, hardened veteran
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Young Fighter Post-Battle
 
@@ -172,7 +172,7 @@ _Parameters: --guidance-scale 5.0_
 portrait of young male fighter, intense eyes, blood on face, black tactical suit torn and damaged, dramatic red backlight, determined expression, post-battle, breathing heavy
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Elite Operative
 
@@ -180,7 +180,7 @@ _Parameters: --guidance-scale 5.0_
 profile portrait of elite operative, sleek black armor with glowing blue tech lines, clean sharp features, professional demeanor, cold blue lighting, futuristic visor pushed up on head, calculating gaze
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Commander
 
@@ -188,7 +188,7 @@ _Parameters: --guidance-scale 5.0_
 portrait of commander, middle-aged, stern face, tactical gear with insignia patches, holographic display reflecting on face, warm amber command center lighting, authority and wisdom, strategic mind
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ---
 
@@ -200,7 +200,7 @@ _Parameters: --guidance-scale 5.0_
 portrait of stoic female soldier, shaved head, facial scars, wearing heavy combat armor with helmet under arm, orange sunset lighting from side, weathered expression, atmospheric smoke, battle-worn
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Female Grizzled Veteran
 
@@ -208,7 +208,7 @@ _Parameters: --guidance-scale 5.0_
 close-up portrait of grizzled female warrior, short gray hair, cybernetic jaw replacement visible, tactical vest with ammunition, rain on face, blue atmospheric lighting, thousand yard stare, hardened veteran
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Young Female Fighter
 
@@ -216,7 +216,7 @@ _Parameters: --guidance-scale 5.0_
 portrait of young female fighter, intense eyes, blood on face, black tactical suit torn and damaged, dramatic red backlight, determined expression, post-battle, breathing heavy
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Female Elite Operative
 
@@ -224,7 +224,7 @@ _Parameters: --guidance-scale 5.0_
 profile portrait of elite female operative, sleek black armor with glowing blue tech lines, clean sharp features, professional demeanor, cold blue lighting, futuristic visor pushed up on head, calculating gaze
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ### Female Commander
 
@@ -232,7 +232,7 @@ _Parameters: --guidance-scale 5.0_
 portrait of female commander, middle-aged, stern face, tactical gear with insignia patches, holographic display reflecting on face, warm amber command center lighting, authority and wisdom, strategic mind
 ```
 
-_Parameters: --guidance-scale 5.0_
+*Parameters: --guidance-scale 5.0*
 
 ---
 
